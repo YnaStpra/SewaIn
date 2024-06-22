@@ -1,5 +1,6 @@
 package com.yan.capstone_sewain
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -47,9 +48,16 @@ class LoginActivity : AppCompatActivity() {
                 if (it.message.contains("Hallo!")) {
                     Toast.makeText(this, "Login successful", Toast.LENGTH_SHORT).show()
                     Log.d("LoginActivity", "Login successful")
-                    // Navigate to MainActivity on successful login
-                    val intent = Intent(this,
-                        MainActivity::class.java)
+
+                    // Simpan status login ke SharedPreferences
+                    val sharedPref = getSharedPreferences("SewainPrefs", Context.MODE_PRIVATE)
+                    with(sharedPref.edit()) {
+                        putBoolean("isLoggedIn", true)
+                        apply()
+                    }
+
+                    // Arahkan ke MainActivity setelah login berhasil
+                    val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
                     finish()
                 } else {

@@ -1,5 +1,6 @@
 package com.yan.capstone_sewain.profile
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -36,7 +37,7 @@ class UserProfil : AppCompatActivity() {
             Vehicle(R.drawable.nmaxlarger, "Yamaha Nmax", "Rp. 95.000", "My Bike Rental Bali", 4.0f,"My Bike Rental Bali","Kec. Kediri, Kabupaten Tabanan"),
             Vehicle(R.drawable.yamahamio, "Yamaha Mio", "Rp. 65.000", "Agas Motorbike Rental", 4.7f,"Agas Motorbike Rental","Kec. Kediri, Kabupaten Tabanan"),
             Vehicle(R.drawable.hondabeat, "Honda Beat", "Rp. 60.000", "SMB Rent Bike Bali", 4.4f,"SMB Rent Bike Bali","Kec. Kuta Utara, Kabupaten Badung"),
-            )
+        )
 
         vehicleAdapter = VehicleAdapter(vehicles)
         recyclerView.layoutManager = LinearLayoutManager(this)
@@ -47,9 +48,18 @@ class UserProfil : AppCompatActivity() {
         }
 
         logOut.setOnClickListener {
-            finish()
+            // Menghapus status login dari SharedPreferences
+            val sharedPref = getSharedPreferences("SewainPrefs", Context.MODE_PRIVATE)
+            with(sharedPref.edit()) {
+                putBoolean("isLoggedIn", false)
+                apply()
+            }
+
+            // Mengarahkan kembali ke LoginActivity
             val intent = Intent(this, LoginActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             startActivity(intent)
+            finish()
         }
 
         btnEdit.setOnClickListener {
