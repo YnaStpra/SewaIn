@@ -1,9 +1,5 @@
 # SewaIn (Product-Based Casptone) - ECommerce for Rental
 
-## Table of Contents
-- [Description](#description)
-- [Project Architecture](#project-architecture)
-
 ## Description
 
 "SewaIn" is an Android application designed to revolutionize vehicle rental services in Bali, addressing the challenges tourists face in finding reliable transportation. 
