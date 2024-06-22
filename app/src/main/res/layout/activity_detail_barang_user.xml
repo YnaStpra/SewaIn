@@ -12,7 +12,7 @@
     <ImageView
         android:id="@+id/foto_barang"
         android:layout_width="match_parent"
-        android:layout_height="270dp"
+        android:layout_height="270sp"
         android:src="@drawable/motor1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -21,10 +21,10 @@
 
     <ImageView
         android:id="@+id/back_button"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="35sp"
+        android:layout_height="35sp"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="16sp"
         android:clickable="true"
         android:focusable="true"
         android:focusableInTouchMode="true"
@@ -37,20 +37,20 @@
         android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardElevation="4dp"
+        app:cardElevation="4sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/foto_barang"
-        android:layout_marginBottom="8dp">
+        android:layout_marginBottom="8sp">
 
         <LinearLayout
             android:id="@+id/detail_barang"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingHorizontal="8dp"
-            android:paddingVertical="16dp"
-            android:layout_marginBottom="8dp">
+            android:paddingHorizontal="8sp"
+            android:paddingVertical="16sp"
+            android:layout_marginBottom="8sp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -59,10 +59,10 @@
 
                 <TextView
                     android:id="@+id/deskripsi_kendaraan"
-                    android:layout_width="0dp"
+                    android:layout_width="0sp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:layout_marginBottom="4dp"
+                    android:layout_marginBottom="4sp"
                     android:fontFamily="@font/manropebold"
                     android:text="Rp 95.000/hari"
                     android:textSize="24sp"
@@ -70,8 +70,8 @@
 
                 <ImageView
                     android:id="@+id/like_icon"
-                    android:layout_width="42dp"
-                    android:layout_height="43dp"
+                    android:layout_width="42sp"
+                    android:layout_height="43sp"
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/like"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -82,7 +82,7 @@
                 android:id="@+id/nama_kendaraan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="16sp"
                 android:fontFamily="@font/manropesemibold"
                 android:text="Yamaha NMAX"
                 android:textSize="16sp" />
@@ -93,8 +93,8 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/border_ada"
                 android:fontFamily="@font/manroperegular"
-                android:paddingHorizontal="12dp"
-                android:paddingVertical="4dp"
+                android:paddingHorizontal="12sp"
+                android:paddingVertical="4sp"
                 android:text="Tersisa 3"
                 android:textColor="@color/white"
                 android:textSize="14sp" />
@@ -106,8 +106,8 @@
         android:id="@+id/cardView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardElevation="4dp"
-        android:layout_marginTop="8dp"
+        app:cardElevation="4sp"
+        android:layout_marginTop="8sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView"
@@ -116,19 +116,19 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="8sp"
             android:orientation="vertical"
-            android:paddingHorizontal="8dp"
-            android:paddingVertical="16dp">
+            android:paddingHorizontal="8sp"
+            android:paddingVertical="16sp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="8sp"
                 android:fontFamily="@font/manropebold"
                 android:text="Deskripsi Barang"
                 android:textColor="@color/blue"
-                android:textSize="16dp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/deskripsi_kendaraan1"
@@ -137,7 +137,7 @@
                 android:fontFamily="@font/manroperegular"
                 android:justificationMode="inter_word"
                 android:text="@string/desc_barang"
-                android:textSize="12dp" />
+                android:textSize="12sp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -145,8 +145,8 @@
         android:id="@+id/cardView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardElevation="4dp"
-        android:layout_marginTop="8dp"
+        app:cardElevation="4sp"
+        android:layout_marginTop="8sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView2"
@@ -155,33 +155,33 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="8sp"
             android:orientation="horizontal"
-            android:paddingHorizontal="8dp"
-            android:paddingVertical="16dp">
+            android:paddingHorizontal="8sp"
+            android:paddingVertical="16sp">
 
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
                 android:src="@drawable/pf" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="8sp"
                 android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:paddingHorizontal="4dp"
-                    android:paddingVertical="8dp"
+                    android:paddingHorizontal="4sp"
+                    android:paddingVertical="8sp"
                     android:weightSum="2">
 
                     <TextView
                         android:id="@+id/nama_toko"
-                        android:layout_width="0dp"
+                        android:layout_width="0sp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:fontFamily="@font/manropebold"
@@ -191,21 +191,21 @@
                         android:textSize="18sp" />
 
                     <TextView
-                        android:layout_width="0dp"
+                        android:layout_width="0sp"
                         android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginHorizontal="16sp"
                         android:layout_weight="1"
                         android:layout_gravity="center"
                         android:background="@drawable/border_follow"
                         android:fontFamily="@font/manropebold"
-                        android:paddingVertical="4dp"
+                        android:paddingVertical="4sp"
                         android:text="Follow"
                         android:textAlignment="center"
                         android:textColor="@color/blue" />
                 </LinearLayout>
 
                 <TextView
-                    android:layout_marginStart="4dp"
+                    android:layout_marginStart="4sp"
                     android:id="@+id/lokasi_vendor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -219,17 +219,17 @@
 
     <Button
         android:id="@+id/btn_R"
-        android:layout_width="181dp"
-        android:layout_height="48dp"
+        android:layout_width="181sp"
+        android:layout_height="48sp"
         android:layout_gravity="end"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="16sp"
         android:background="@drawable/border"
         android:fontFamily="@font/manropebold"
-        android:paddingVertical="0dp"
+        android:paddingVertical="0sp"
         android:text="Checkout"
         android:textColor="@color/white"
-        android:textSize="14dp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cardView3" />
 

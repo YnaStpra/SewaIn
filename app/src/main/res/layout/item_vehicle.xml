@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginStart="8dp"
-    android:layout_marginEnd="8dp"
-    android:layout_marginTop="8dp"
-    app:cardElevation="4dp">
+    android:layout_marginStart="8sp"
+    android:layout_marginEnd="8sp"
+    android:layout_marginTop="8sp"
+    app:cardElevation="4sp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -16,10 +16,10 @@
 
         <ImageView
             android:id="@+id/vehicle_image"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
+            android:layout_width="120sp"
+            android:layout_height="120sp"
             android:contentDescription="@string/gambarmotor"
-            android:padding="8dp"
+            android:padding="8sp"
             android:scaleType="centerCrop"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -38,16 +38,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/manropesemibold"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 tools:text="Merk Motor" />
 
             <TextView
                 android:id="@+id/tv_item_description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="8sp"
                 android:fontFamily="@font/manropebold"
-                android:textSize="16dp"
+                android:textSize="16sp"
                 tools:text="Rp. 100.000" />
 
         </LinearLayout>
@@ -56,7 +56,7 @@
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="8sp"
             android:gravity="center"
             app:layout_constraintStart_toEndOf="@+id/vehicle_image"
             app:layout_constraintTop_toBottomOf="@+id/ly">
@@ -64,15 +64,15 @@
             <ImageView
                 android:contentDescription="@string/icontoko"
                 android:src="@drawable/user"
-                android:layout_width="15dp"
-                android:layout_height="15dp"/>
+                android:layout_width="15sp"
+                android:layout_height="15sp"/>
 
             <TextView
                 android:id="@+id/tv_toko"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="12dp"
-                android:layout_marginStart="4dp"
+                android:textSize="12sp"
+                android:layout_marginStart="4sp"
                 android:textAlignment="center"
                 android:textColor="@color/blue"
                 android:fontFamily="@font/manropesemibold"
@@ -84,31 +84,31 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            android:layout_margin="8sp"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
 
             <TextView
-                android:layout_marginEnd="6dp"
+                android:layout_marginEnd="6sp"
                 android:id="@+id/tv_location"
                 tools:text="Lokasi"
-                android:textSize="12dp"
+                android:textSize="12sp"
                 android:fontFamily="@font/manroperegular"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
             <ImageView
                 android:id="@+id/star"
-                android:layout_width="15dp"
-                android:layout_height="15dp"
+                android:layout_width="15sp"
+                android:layout_height="15sp"
                 android:src="@drawable/star" />
 
             <TextView
                 android:id="@+id/tv_rating"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
+                android:layout_marginStart="4sp"
                 tools:text="4.5"
                 android:textSize="11sp" />
         </LinearLayout>

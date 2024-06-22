@@ -12,19 +12,19 @@
 
     <SearchView
         android:id="@+id/searchView"
-        android:layout_width="0dp"
+        android:layout_width="0sp"
         android:layout_height="wrap_content"
         android:queryHint="Search"
         android:background="@drawable/border"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="16dp"/>
+        android:layout_margin="16sp"/>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
         app:layout_constraintTop_toBottomOf="@+id/searchView"
-        android:layout_margin="16dp"
+        android:layout_margin="16sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -39,33 +39,33 @@
                 android:id="@+id/txt_welcome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="8sp"
                 android:fontFamily="@font/manropebold"
                 android:text="Welcome!!"
                 android:textColor="@color/blue"
-                android:textSize="20dp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8sp"
+                android:layout_marginStart="8sp"
                 android:fontFamily="@font/manropesemibold"
                 android:text="Hifric Aldar"
-                android:textSize="16dp" />
+                android:textSize="16sp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="16sp"
             android:layout_gravity="end|center_vertical">
 
             <ImageView
                 android:id="@+id/bottom_me"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
+                android:layout_width="55sp"
+                android:layout_height="55sp"
                 android:src="@drawable/user" />
 
         </LinearLayout>
@@ -75,7 +75,7 @@
     <androidx.cardview.widget.CardView
         android:id="@id/cardView3"
         app:layout_constraintTop_toBottomOf="@id/cardView2"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="8sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -101,29 +101,27 @@
             <View
                 android:id="@+id/line1"
                 android:layout_width="match_parent"
-                android:layout_height="5dp"
+                android:layout_height="5sp"
                 android:background="@drawable/straightline"
                 app:layout_constraintTop_toBottomOf="@id/pesanan_saya"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                tools:layout_editor_absoluteX="1dp" />
-
-
+                tools:layout_editor_absoluteX="1sp" />
 
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
     <androidx.recyclerview.widget.RecyclerView
+        app:layout_constraintTop_toBottomOf="@id/cardView3"
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp"
+        android:padding="8sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cardView3"
         app:layout_constraintVertical_bias="0.0" />
 
 

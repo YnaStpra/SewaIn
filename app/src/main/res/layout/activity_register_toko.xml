@@ -10,10 +10,10 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="30dp"
+        android:layout_width="35sp"
+        android:layout_height="35sp"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="30sp"
         android:src="@drawable/baseline_arrow_back_24"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,20 +23,20 @@
         android:id="@+id/txt_vfrfy_register_toko"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="30sp"
         android:fontFamily="@font/manropebold"
         android:text="@string/daftar_toko"
         android:textAlignment="center"
         android:textColor="@color/blue"
-        android:textSize="24dp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
         android:id="@+id/scrollView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
         app:layout_constraintTop_toBottomOf="@id/txt_vfrfy_register_toko"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,90 +46,90 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="16sp">
 
             <TextView
                 android:id="@+id/informasitoko"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="60sp"
                 android:fontFamily="@font/manropesemibold"
                 android:text="Informasi Toko"
-                android:textSize="20dp" />
+                android:textSize="20sp" />
 
             <LinearLayout
                 android:id="@+id/ly1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="15sp"
                 android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="5sp"
                     android:fontFamily="@font/manropesemibold"
                     android:text="Nama Toko"
-                    android:textSize="12dp" />
+                    android:textSize="12sp" />
 
                 <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_marginBottom="15dp"
+                    android:layout_height="40sp"
+                    android:layout_marginBottom="15sp"
                     android:background="@drawable/border"
                     android:backgroundTint="@color/white"
                     android:fontFamily="@font/manroperegular"
                     android:hint="@string/reg_nama_toko"
-                    android:paddingStart="5dp" />
+                    android:paddingStart="5sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="5sp"
                     android:fontFamily="@font/manropesemibold"
                     android:text="Nomor Telepon"
-                    android:textSize="12dp" />
+                    android:textSize="12sp" />
 
                 <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_marginBottom="15dp"
+                    android:layout_height="40sp"
+                    android:layout_marginBottom="15sp"
                     android:background="@drawable/border"
                     android:backgroundTint="@color/white"
                     android:fontFamily="@font/manroperegular"
                     android:hint="@string/txt_reg_no_telepon"
-                    android:paddingStart="5dp" />
+                    android:paddingStart="5sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="5sp"
                     android:fontFamily="@font/manropesemibold"
                     android:text="Kabupaten/Kota"
-                    android:textSize="12dp" />
+                    android:textSize="12sp" />
 
                 <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_marginBottom="15dp"
+                    android:layout_height="40sp"
+                    android:layout_marginBottom="15sp"
                     android:background="@drawable/border"
                     android:backgroundTint="@color/white"
                     android:fontFamily="@font/manroperegular"
                     android:hint="@string/text_reg_kabupaten"
-                    android:paddingStart="5dp" />
+                    android:paddingStart="5sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="5sp"
                     android:fontFamily="@font/manropesemibold"
                     android:text="Alamat Toko"
-                    android:textSize="12dp" />
+                    android:textSize="12sp" />
 
                 <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="142dp"
-                    android:layout_marginBottom="15dp"
+                    android:layout_height="142sp"
+                    android:layout_marginBottom="15sp"
                     android:background="@drawable/border"
                     android:backgroundTint="@color/white"
                     android:fontFamily="@font/manroperegular"
@@ -137,23 +137,23 @@
                     android:hint="@string/txt_reg_alamat_toko"
                     android:importantForAutofill="no"
                     android:inputType="textMultiLine"
-                    android:paddingStart="5dp" />
+                    android:paddingStart="5sp" />
 
             </LinearLayout>
 
             <Button
                 android:id="@+id/btn_R"
-                android:layout_width="270dp"
-                android:layout_height="32dp"
+                android:layout_width="270sp"
+                android:layout_height="32sp"
                 android:layout_gravity="center"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="15sp"
                 android:background="@drawable/border"
                 android:fontFamily="@font/manropebold"
-                android:paddingVertical="0dp"
+                android:paddingVertical="0sp"
                 android:text="@string/btn_regstr_toko"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="14dp" />
+                android:textSize="14sp" />
 
         </LinearLayout>
     </ScrollView>

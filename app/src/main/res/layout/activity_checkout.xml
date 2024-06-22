@@ -11,7 +11,7 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
-        android:layout_width="0dp"
+        android:layout_width="0sp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,12 +21,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingVertical="16dp"
-            android:paddingHorizontal="16dp">
+            android:paddingVertical="16sp"
+            android:paddingHorizontal="16sp">
 
             <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
@@ -36,23 +36,24 @@
 
             <TextView
                 android:id="@+id/txt_dtl_barang"
-                android:layout_width="0dp"
+                android:layout_width="0sp"
+                android:layout_marginEnd="35sp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="@font/manropebold"
                 android:text="Check Out"
                 android:textAlignment="center"
-                android:textSize="24dp" />
+                android:textSize="24sp" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView1"
-        android:layout_width="0dp"
+        android:layout_width="0sp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        app:cardElevation="4dp"
+        android:layout_marginTop="8sp"
+        app:cardElevation="4sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cardView">
@@ -61,17 +62,17 @@
             android:id="@+id/detail_barang"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="8sp"
             android:orientation="vertical"
-            android:paddingHorizontal="8dp"
-            android:paddingVertical="16dp">
+            android:paddingHorizontal="8sp"
+            android:paddingVertical="16sp">
 
             <TextView
                 android:text="Kendaraan Pesanan Anda"
                 android:fontFamily="@font/manropebold"
                 android:textColor="@color/blue"
-                android:textSize="20dp"
-                android:layout_marginBottom="8dp"
+                android:textSize="20sp"
+                android:layout_marginBottom="8sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
@@ -82,14 +83,14 @@
 
                 <ImageView
                     android:id="@+id/foto_barang"
-                    android:layout_width="115dp"
-                    android:layout_height="115dp"
+                    android:layout_width="115sp"
+                    android:layout_height="115sp"
                     android:src="@drawable/nmax" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginStart="8sp"
                     android:orientation="vertical">
 
                     <TextView
@@ -104,7 +105,7 @@
                         android:id="@+id/harga_kendaraan"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="24dp"
+                        android:layout_marginBottom="24sp"
                         android:fontFamily="@font/manropesemibold"
                         android:text="Rp.95.000"
                         android:textSize="16sp" />
@@ -113,7 +114,7 @@
                         android:orientation="horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="8sp"
                         android:gravity="center"
                         app:layout_constraintStart_toEndOf="@+id/vehicle_image"
                         app:layout_constraintTop_toBottomOf="@+id/harga_kendaraan">
@@ -121,15 +122,15 @@
                         <ImageView
                             android:contentDescription="@string/icontoko"
                             android:src="@drawable/user"
-                            android:layout_width="15dp"
-                            android:layout_height="15dp"/>
+                            android:layout_width="15sp"
+                            android:layout_height="15sp"/>
 
                         <TextView
                             android:id="@+id/tv_toko"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="12dp"
-                            android:layout_marginStart="4dp"
+                            android:textSize="12sp"
+                            android:layout_marginStart="4sp"
                             android:textAlignment="center"
                             android:textColor="@color/blue"
                             android:fontFamily="@font/manropesemibold"
@@ -147,7 +148,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
         app:layout_constraintTop_toBottomOf="@id/cardView1"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="8sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -155,17 +156,17 @@
             android:id="@+id/ly_details"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="8sp"
             android:orientation="vertical"
-            android:paddingHorizontal="8dp"
-            android:paddingVertical="16dp">
+            android:paddingHorizontal="8sp"
+            android:paddingVertical="16sp">
 
             <TextView
                 android:text="Detail Pinjaman"
                 android:fontFamily="@font/manropebold"
                 android:textColor="@color/blue"
-                android:textSize="20dp"
-                android:layout_marginBottom="8dp"
+                android:textSize="20sp"
+                android:layout_marginBottom="8sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
@@ -177,29 +178,29 @@
                 android:layout_height="wrap_content"/>
 
             <LinearLayout
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="16sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <EditText
-                    android:layout_width="120dp"
-                    android:layout_height="35dp"
+                    android:layout_width="120sp"
+                    android:layout_height="35sp"
                     android:background="@drawable/border_follow" />
 
                 <View
-                    android:layout_width="75dp"
+                    android:layout_width="75sp"
                     android:layout_gravity="center"
-                    android:layout_height="11dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"
+                    android:layout_height="11sp"
+                    android:layout_marginStart="16sp"
+                    android:layout_marginEnd="16sp"
                     android:background="@drawable/straightline"
                     app:layout_constraintTop_toBottomOf="@id/pesanan_saya"
-                    tools:layout_editor_absoluteX="1dp" />
+                    tools:layout_editor_absoluteX="1sp" />
 
                 <EditText
-                    android:layout_width="120dp"
-                    android:layout_height="35dp"
+                    android:layout_width="120sp"
+                    android:layout_height="35sp"
                     android:background="@drawable/border_follow" />
 
 
@@ -207,18 +208,18 @@
 
             <TextView
                 android:text="Pembayaran"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="16sp"
                 android:fontFamily="@font/manropebold"
                 android:textSize="14sp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="8sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
 
             <TextView
                 android:fontFamily="@font/manropebold"
-                android:textSize="16dp"
-                android:padding="8dp"
+                android:textSize="16sp"
+                android:padding="8sp"
                 android:background="@drawable/border_follow"
                 android:text="Cash On Delivery (COD)"
                 android:layout_width="match_parent"
@@ -232,11 +233,11 @@
         android:id="@+id/cardView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="8sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cardView2"
         app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="0dp">
+        tools:layout_editor_absoluteX="0sp">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -248,7 +249,7 @@
                 android:id="@+id/ly1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="8sp"
                 android:orientation="vertical">
 
                 <TextView
@@ -258,13 +259,13 @@
                     android:fontFamily="@font/manropebold"
                     android:text="Total"
                     android:textColor="@color/blue"
-                    android:textSize="20dp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/total_payment_value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="8sp"
                     android:fontFamily="@font/manropebold"
                     android:text="Rp 95.000"
                     android:textSize="20sp" />
@@ -281,15 +282,15 @@
 
                 <Button
                     android:id="@+id/btn_checkout"
-                    android:layout_width="181dp"
-                    android:layout_height="48dp"
-                    android:layout_marginStart="90dp"
+                    android:layout_width="181sp"
+                    android:layout_height="48sp"
+                    android:layout_marginStart="90sp"
                     android:background="@drawable/border"
                     android:fontFamily="@font/manropebold"
-                    android:paddingVertical="0dp"
+                    android:paddingVertical="0sp"
                     android:text="Checkout"
                     android:textColor="@color/white"
-                    android:textSize="14dp"
+                    android:textSize="14sp"
                     app:layout_constraintTop_toBottomOf="@id/cardView3" />
             </LinearLayout>
 
