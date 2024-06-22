@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">SewaIn</string>
+    <string name="fullname">Enter Your Full Name</string>
+    <string name="email">Enter Your Email</string>
+    <string name="password">Create Password</string>
+    <string name="confirmpass">Confirm Password</string>
+    <string name="gambarmotor">gambarmotor</string>
+    <string name="btn_src_mobil">Mobil</string>
+    <string name="btn_src_motor">Motor</string>
+    <string name="daftarkan_toko">Daftarkan Toko</string>
+    <string name="forger_password">Forget Password?</string>
+    <string name="daftar_toko">Daftar Toko</string>
+    <string name="reg_nama_toko">Nama Toko</string>
+    <string name="txt_reg_no_telepon">No. Telepon</string>
+    <string name="text_reg_kabupaten">Kabupaten/Kota</string>
+    <string name="txt_reg_alamat_toko">Alamat Toko</string>
+    <string name="btn_regstr_toko">SELANJUTNYA</string>
+    <string name="reg_toko_nama_lengkap">Nama Lengkap</string>
+    <string name="nik">NIK</string>
+    <string name="gambarktp">gambarktp</string>
+    <string name="title_activity_profil_toko">ProfilToko</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="desc_barang">Yamaha NMAX adalah salah satu kendaraan populer yang banyak digunakan oleh masyarakat. Salah satu fitur utama dari Yamaha NMAX adalah kapasitas penumpangnya yang mencapai hingga 2 orang, membuatnya ideal untuk perjalanan. Selain itu, kendaraan ini memiliki tampilan yang menarik dengan warna Silver, memberikan kesan modern dan stylish.</string>
+    <string name="icontoko">icontoko</string>
+    <string name="welcome">Welcome</string>
+</resources>
