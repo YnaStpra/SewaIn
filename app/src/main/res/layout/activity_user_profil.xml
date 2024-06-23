@@ -44,11 +44,11 @@
 
             <ImageView
                 android:id="@+id/logout"
-                android:layout_width="25sp"
+                android:layout_width="match_parent"
                 android:layout_height="30sp"
                 android:src="@drawable/exit"
-                android:layout_gravity="center"
-                android:layout_marginStart="160sp" />
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="170sp"/>
 
         </LinearLayout>
 
