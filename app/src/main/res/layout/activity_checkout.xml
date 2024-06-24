@@ -46,6 +46,7 @@
                 android:textSize="24sp" />
 
         </LinearLayout>
+
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -64,7 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8sp"
             android:orientation="vertical"
-            android:paddingHorizontal="8sp"
+            android:paddingHorizontal="16sp"
             android:paddingVertical="16sp">
 
             <TextView
@@ -141,6 +142,7 @@
                 </LinearLayout>
 
             </LinearLayout>
+
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
@@ -158,7 +160,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8sp"
             android:orientation="vertical"
-            android:paddingHorizontal="8sp"
+            android:paddingHorizontal="16sp"
             android:paddingVertical="16sp">
 
             <TextView
@@ -181,10 +183,11 @@
                 android:layout_marginTop="16sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:orientation="horizontal">
 
                 <EditText
-                    android:layout_width="120sp"
+                    android:layout_width="155sp"
                     android:layout_height="35sp"
                     android:background="@drawable/border_follow" />
 
@@ -199,10 +202,10 @@
                     tools:layout_editor_absoluteX="1sp" />
 
                 <EditText
-                    android:layout_width="120sp"
+                    android:layout_width="155sp"
                     android:layout_height="35sp"
+                    android:layout_gravity="end"
                     android:background="@drawable/border_follow" />
-
 
             </LinearLayout>
 
@@ -214,7 +217,6 @@
                 android:layout_marginBottom="8sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
-
 
             <TextView
                 android:fontFamily="@font/manropebold"
@@ -249,7 +251,7 @@
                 android:id="@+id/ly1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8sp"
+                android:layout_margin="16sp"
                 android:orientation="vertical">
 
                 <TextView
@@ -282,7 +284,7 @@
 
                 <Button
                     android:id="@+id/btn_checkout"
-                    android:layout_width="181sp"
+                    android:layout_width="211dp"
                     android:layout_height="48sp"
                     android:layout_marginStart="90sp"
                     android:background="@drawable/border"
@@ -292,9 +294,11 @@
                     android:textColor="@color/white"
                     android:textSize="14sp"
                     app:layout_constraintTop_toBottomOf="@id/cardView3" />
+
             </LinearLayout>
 
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
