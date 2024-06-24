@@ -10,20 +10,39 @@
     android:layout_gravity="center"
     tools:context=".MainActivity">
 
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="0sp"
-        android:layout_height="wrap_content"
-        android:queryHint="Search"
-        android:background="@drawable/border"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="16sp"/>
+    <LinearLayout
+        android:id="@+id/ly2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16sp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:queryHint="Search"/>
+
+        <ImageView
+            android:src="@drawable/chatfill"
+            android:layout_marginEnd="16sp"
+            android:layout_width="35sp"
+            android:layout_height="35sp"/>
+
+        <ImageView
+            android:src="@drawable/notificationfill"
+            android:layout_marginEnd="16sp"
+            android:layout_width="35sp"
+            android:layout_height="35sp"/>
+
+    </LinearLayout>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
-        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:layout_constraintTop_toBottomOf="@+id/ly2"
         android:layout_margin="16sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

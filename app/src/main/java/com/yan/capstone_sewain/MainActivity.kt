@@ -2,12 +2,14 @@ package com.yan.capstone_sewain
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageView
 import android.widget.SearchView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.yan.capstone_sewain.profile.UserProfil
+import java.lang.reflect.Field
 
 class MainActivity : AppCompatActivity() {
 
@@ -27,34 +29,16 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, UserProfil::class.java)
             startActivity(intent)
         }
+
         searchView.setOnClickListener {
             val intent = Intent(this, SearchActivity::class.java)
             startActivity(intent)
         }
 
-        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
-            override fun onQueryTextSubmit(query: String?): Boolean {
-                // Handle search query submission
-                if (query != null) {
-                    // Perform search logic here
-                    // For example, update a RecyclerView adapter with search results
-                    vehicleAdapter.filter(query)
-                }
-                return false
-            }
+        // Implementasikan fungsi disableSearchViewEditText
+        disableSearchViewEditText(searchView)
 
-            override fun onQueryTextChange(newText: String?): Boolean {
-                // Handle search text change
-                if (newText != null) {
-                    // Perform live search logic here
-                    // For example, filter a list based on the newText
-                    vehicleAdapter.filter(newText)
-                }
-                return false
-            }
-        })
-
-        // Initialize the sample data
+        // Inisialisasi data contoh
         vehicles = listOf(
             Vehicle(R.drawable.nmaxlarger, "Yamaha Nmax", "Rp. 95.000", "My Bike Rental Bali", 4.0f,"My Bike Rental Bali","Kec. Kediri, Kabupaten Tabanan"),
             Vehicle(R.drawable.yamahamio, "Yamaha Mio", "Rp. 65.000", "Agas Motorbike Rental", 4.7f,"Agas Motorbike Rental","Kec. Kediri, Kabupaten Tabanan"),
@@ -70,5 +54,26 @@ class MainActivity : AppCompatActivity() {
         vehicleAdapter = VehicleAdapter(vehicles)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = vehicleAdapter
+    }
+
+    private fun disableSearchViewEditText(searchView: SearchView) {
+        try {
+            // Mengakses field mSearchButton
+            val searchField: Field = SearchView::class.java.getDeclaredField("mSearchButton")
+            searchField.isAccessible = true
+            val searchButton = searchField.get(searchView) as View
+            searchButton.isEnabled = false
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+
+        // Menghilangkan fokus ketika SearchView mendapatkan fokus
+        searchView.setOnQueryTextFocusChangeListener { _, hasFocus ->
+            if (hasFocus) {
+                searchView.clearFocus()
+                val intent = Intent(this, SearchActivity::class.java)
+                startActivity(intent)
+            }
+        }
     }
 }
