@@ -187,7 +187,7 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:layout_width="155sp"
+                    android:layout_width="150sp"
                     android:layout_height="35sp"
                     android:background="@drawable/border_follow" />
 
@@ -202,9 +202,8 @@
                     tools:layout_editor_absoluteX="1sp" />
 
                 <EditText
-                    android:layout_width="155sp"
+                    android:layout_width="150sp"
                     android:layout_height="35sp"
-                    android:layout_gravity="end"
                     android:background="@drawable/border_follow" />
 
             </LinearLayout>
