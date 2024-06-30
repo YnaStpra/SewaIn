@@ -8,6 +8,9 @@ import android.widget.SearchView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.denzcoskun.imageslider.ImageSlider
+import com.denzcoskun.imageslider.constants.ScaleTypes
+import com.denzcoskun.imageslider.models.SlideModel
 import com.yan.capstone_sewain.profile.UserProfil
 import java.lang.reflect.Field
 
@@ -23,7 +26,15 @@ class MainActivity : AppCompatActivity() {
 
         val bottomMeImageView = findViewById<ImageView>(R.id.bottom_me)
         val searchView = findViewById<SearchView>(R.id.searchView)
+        val imageSlider = findViewById<ImageSlider>(R.id.imageSlider)
+        val slideModels = ArrayList<SlideModel>()
         recyclerView = findViewById(R.id.recycler_view)
+
+        slideModels.add(SlideModel(R.drawable.title, ScaleTypes.FIT))
+        slideModels.add(SlideModel(R.drawable.title3, ScaleTypes.FIT))
+
+        imageSlider.setImageList(slideModels, ScaleTypes.FIT)
+
 
         bottomMeImageView.setOnClickListener {
             val intent = Intent(this, UserProfil::class.java)

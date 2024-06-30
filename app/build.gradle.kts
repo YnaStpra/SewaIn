@@ -55,6 +55,7 @@ dependencies {
     implementation(libs.androidx.datastore.core.android)
     implementation(libs.androidx.datastore.preferences.core.jvm)
     testImplementation(libs.junit)
+    implementation("com.github.denzcoskun:ImageSlideshow:0.1.0")
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
