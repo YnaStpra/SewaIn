@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
@@ -36,6 +36,7 @@
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:layout_width="0sp"
+        android:background="@color/white"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/cardView"
         app:layout_constraintStart_toStartOf="parent"
@@ -67,7 +68,9 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
-        android:layout_margin="16sp"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:layout_marginBottom="16sp"
         android:layout_width="0sp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/ly2"
@@ -143,16 +146,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="5sp"
                 android:background="@drawable/straightline" />
+
         </LinearLayout>
+
     </androidx.cardview.widget.CardView>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="0sp"
         android:layout_height="0sp"
-        android:padding="8sp"
+        android:paddingStart="8sp"
+        android:paddingEnd="8sp"
+        android:paddingTop="8sp"
+        android:background="@color/white"
         app:layout_constraintTop_toBottomOf="@+id/cardView3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -30,8 +30,10 @@ class MainActivity : AppCompatActivity() {
         val slideModels = ArrayList<SlideModel>()
         recyclerView = findViewById(R.id.recycler_view)
 
-        slideModels.add(SlideModel(R.drawable.title, ScaleTypes.FIT))
-        slideModels.add(SlideModel(R.drawable.title3, ScaleTypes.FIT))
+        slideModels.add(SlideModel(R.drawable.rental1, ScaleTypes.FIT))
+        slideModels.add(SlideModel(R.drawable.rental2, ScaleTypes.FIT))
+        slideModels.add(SlideModel(R.drawable.rental3, ScaleTypes.FIT))
+        slideModels.add(SlideModel(R.drawable.rental4, ScaleTypes.FIT))
 
         imageSlider.setImageList(slideModels, ScaleTypes.FIT)
 
