@@ -6,7 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@color/white"
     tools:context=".DetailBarangUser">
 
     <ImageView
@@ -15,7 +15,6 @@
         android:layout_height="270sp"
         android:src="@drawable/motor1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -37,11 +36,11 @@
         android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8sp"
         app:cardElevation="4sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/foto_barang"
-        android:layout_marginBottom="8sp">
+        app:layout_constraintTop_toBottomOf="@+id/foto_barang">
 
         <LinearLayout
             android:id="@+id/detail_barang"
@@ -49,8 +48,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingHorizontal="8sp"
-            android:paddingVertical="16sp"
-            android:layout_marginBottom="8sp">
+            android:paddingVertical="16sp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -58,24 +56,21 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/deskripsi_kendaraan"
+                    android:id="@+id/harga_kendaraan"
                     android:layout_width="0sp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:layout_marginBottom="4sp"
                     android:fontFamily="@font/manropebold"
                     android:text="Rp 95.000/hari"
-                    android:textSize="24sp"
-                    app:layout_constraintEnd_toStartOf="@id/like_icon" />
+                    android:textSize="24sp" />
 
                 <ImageView
                     android:id="@+id/like_icon"
                     android:layout_width="42sp"
                     android:layout_height="43sp"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/like"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="@id/harga_kendaraan" />
+                    android:src="@drawable/like" />
 
             </LinearLayout>
 
@@ -108,12 +103,11 @@
         android:id="@+id/cardView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardElevation="4sp"
         android:layout_marginTop="8sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardElevation="4sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -149,12 +143,11 @@
         android:id="@+id/cardView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardElevation="4sp"
         android:layout_marginTop="8sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardElevation="4sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView2"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -190,7 +183,7 @@
                         android:layout_weight="1"
                         android:fontFamily="@font/manropebold"
                         android:gravity="start|center_vertical"
-                        tools:text="Holiyay Rent"
+                        android:text="Holiyay Rent"
                         android:textColor="@color/blue"
                         android:textSize="18sp" />
 
@@ -214,7 +207,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/manroperegular"
-                    tools:text="nama kota" />
+                    android:text="nama kota" />
 
             </LinearLayout>
 
@@ -225,14 +218,16 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_height="wrap_content">
 
-            
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
@@ -241,8 +236,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cardView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardView4"
         app:layout_constraintVertical_bias="1.0">
 
         <Button
@@ -250,14 +245,13 @@
             android:layout_width="181sp"
             android:layout_height="48sp"
             android:layout_gravity="end"
-           android:layout_margin="16sp"
+            android:layout_margin="16sp"
             android:background="@drawable/border"
             android:fontFamily="@font/manropebold"
             android:paddingVertical="0sp"
             android:text="Checkout"
             android:textColor="@color/white"
-            android:textSize="14sp"
-            app:layout_constraintTop_toBottomOf="@id/cardView3" />
+            android:textSize="14sp" />
 
     </androidx.cardview.widget.CardView>
 

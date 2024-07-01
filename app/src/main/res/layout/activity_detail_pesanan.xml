@@ -5,13 +5,16 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@color/white"
     tools:context=".admintoko.DetailPesanan">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -25,9 +28,7 @@
                 android:layout_width="35sp"
                 android:layout_height="35sp"
                 android:src="@drawable/baseline_arrow_back_24"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:onClick="onBackButtonClicked"/>
+                android:onClick="onBackButtonClicked" />
 
             <TextView
                 android:layout_marginEnd="35sp"
@@ -37,13 +38,10 @@
                 android:fontFamily="@font/manropebold"
                 android:text="Detail Pesanan"
                 android:textAlignment="center"
-                android:textSize="24sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@id/imageView"
-                app:layout_constraintTop_toTopOf="parent" />
-
+                android:textSize="24sp" />
 
         </LinearLayout>
+
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -82,9 +80,8 @@
 
                     <TextView
                         android:id="@+id/nama_kendaraan"
-                        android:layout_width="181sp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="160sp"
                         android:fontFamily="@font/manropebold"
                         android:text="Yamaha Nmax"
                         android:textSize="24sp" />
@@ -99,8 +96,11 @@
                         android:textSize="16sp" />
 
                 </LinearLayout>
+
             </LinearLayout>
+
         </LinearLayout>
+
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -108,6 +108,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView1">
 
         <LinearLayout
@@ -135,7 +137,9 @@
                 android:justificationMode="inter_word"
                 android:text="@string/desc_barang"
                 android:textSize="12sp" />
+
         </LinearLayout>
+
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

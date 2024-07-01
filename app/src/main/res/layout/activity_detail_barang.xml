@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@color/white"
     tools:context=".admintoko.DetailPesanan">
 
     <androidx.cardview.widget.CardView
@@ -45,6 +45,7 @@
                 android:textSize="24sp" />
 
         </LinearLayout>
+
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -114,13 +115,15 @@
                 </LinearLayout>
 
                 <ImageView
-                    android:layout_marginStart="60sp"
+                    android:layout_marginStart="80sp"
                     android:layout_width="35sp"
                     android:layout_height="35sp"
                     android:src="@drawable/trash" />
 
             </LinearLayout>
+
         </LinearLayout>
+
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -160,6 +163,7 @@
                 android:textSize="12sp" />
 
         </LinearLayout>
+
     </androidx.cardview.widget.CardView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
