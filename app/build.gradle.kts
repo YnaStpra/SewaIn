@@ -54,7 +54,6 @@ dependencies {
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.datastore.core.android)
     implementation(libs.androidx.datastore.preferences.core.jvm)
-    implementation(libs.car.ui.lib)
     testImplementation(libs.junit)
     implementation("com.github.denzcoskun:ImageSlideshow:0.1.0")
     androidTestImplementation(libs.androidx.junit)
