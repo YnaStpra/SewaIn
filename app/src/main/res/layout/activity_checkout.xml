@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="@font/manropebold"
-                android:text="Check Out"
+                android:text="Checkout"
                 android:textAlignment="center"
                 android:textSize="24sp" />
 
