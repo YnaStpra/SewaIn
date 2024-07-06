@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".admintoko.VerfiyTokoActivity"
-    android:background="@drawable/background">
+    android:background="@color/white">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
